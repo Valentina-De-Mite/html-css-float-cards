@@ -20,6 +20,7 @@ body {
 
 }
 
+
 .clearfix::after {
     content: "";
     display: table;
@@ -33,19 +34,27 @@ body {
 }
 
 .square {
-    width: 357px;
+    width: calc(100% / 3 - 16px);
     height: 97px;
     background-color: var(--cl-square);
     margin-top: 2rem;
-
+    padding-right: 2rem;
+    float: left;
+    margin-right: 16px;
 
 }
 
+.center {
+    float: left;
+}
 
+.dx {
+    margin-right: 16px;
+}
 
 .description {
     clear: right;
-    padding: 1rem;
+    padding: 1rem 2REM;
 }
 
 
@@ -62,12 +71,4 @@ h3,
 
 .email {
     color: var(--cl-subtitle);
-}
-
-.dx {
-    clear: left;
-}
-
-.center {
-    float: left;
 }
