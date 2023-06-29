@@ -7,7 +7,7 @@
 :root {
     --cl-title: rgba(229, 49, 112, 255);
     --cl-title2: rgba(255, 255, 254, 255);
-    --cl-table: rgba(15, 14, 23, 255);
+    --cl-square: rgba(15, 14, 23, 255);
     --cl-subtitle: rgb(83, 173, 201);
 
 }
@@ -23,5 +23,41 @@ body {
 .title {
     color: var(--cl-title);
     text-align: center;
-    padding-top: 2rem;
+    padding: 2rem 0;
+}
+
+.square {
+    width: 357px;
+    height: 97px;
+    background-color: var(--cl-square);
+    margin-top: 2rem;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.description {
+    clear: right;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+
+img {
+    width: 99px;
+    height: 97px;
+    float: left;
+}
+
+h3,
+.occupation {
+    color: var(--cl-title2);
+}
+
+.email {
+    color: var(--cl-subtitle);
 }
