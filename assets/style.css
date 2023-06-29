@@ -3,3 +3,25 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --cl-title: rgba(229, 49, 112, 255);
+    --cl-title2: rgba(255, 255, 254, 255);
+    --cl-table: rgba(15, 14, 23, 255);
+    --cl-subtitle: rgb(83, 173, 201);
+
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    max-width: 1170px;
+    margin: auto;
+    width: 80%;
+
+}
+
+.title {
+    color: var(--cl-title);
+    text-align: center;
+    padding-top: 2rem;
+}
